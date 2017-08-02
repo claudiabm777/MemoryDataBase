@@ -1,0 +1,37 @@
+/////////////////////////////////////////////////// GENERIC DB
+
+CREATE_TABLE:TAB1:NAME,GRADE,AGE:STRING,DOUBLE,INT;
+
+INSERT_ROW:TAB1:Claudia,9.8,23;
+
+INSERT_ROW:TAB1:Santiago,9.8,20;
+INSERT_ROW:TAB1:Sebastian,9.6,21;
+INSERT_ROW:TAB1:Nicolas,5.6,31;
+INSERT_ROW:TAB1:Pedrito,3.6,61;
+INSERT_ROW:TAB1:Anamaria,7.2,31;
+
+SELECT_TABLE:TAB1;
+
+DELETE_ROW:TAB1:4;
+
+SELECT_TABLE:TAB1;
+
+QUERY_TABLE:TAB1:NAME:==:Claudia;
+
+QUERY_TABLE:TAB1:GRADE:<=:5.9;
+
+UPDATE_ROW:TAB1:1:GRADE,AGE:7.3,9;
+
+SELECT_TABLE:TAB1;
+DELETE_TABLE:TAB1;
+
+//////////////////////////////////////////////////////// LIBRARY
+INSERT:electronicalMagazine:12222MM1,Pepito Perez,OJOS,4,0,0;
+INSERT:electronicalMagazine:12223MM1,Pepito Perez,CORAZON,4,0,0;
+INSERT:electronicalMagazine:12224MM1,Pepito Perez,TRAMPAS,4,5,6;
+
+SEE_OBJECT:electronicalMagazine
+ACCESS_INTERNAL:electronicalMagazine:1:OJOS
+SEE_OBJECT:electronicalMagazine
+ACCESS_EXTERNAL:electronicalMagazine:4:OJOS
+SEE_OBJECT:electronicalMagazine
